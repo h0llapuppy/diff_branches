@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: get-diff-branches
+Version: 0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+
+Shared library to get difference between branches of OS Alt linux packages
+
+Steps for setup librory:
+
+
