@@ -19,24 +19,31 @@ def request(b1: str, a1:str, b2: str, a2: str):
             
             short_package_list_1 = list(map(lambda row: row['name'],package_list_b1))
             short_package_list_2 = list(map(lambda row: row['name'],package_list_b2))
-
+            print('1')
             package_list_diff_b1 = [x for x in short_package_list_1 if x not in short_package_list_2]
-            # with open('./work_files/b1.txt', 'w') as file1:
-            #      file1.write(str(dict(qount=len(package_list_diff_b1),packages=package_list_diff_b1)))
-            
+            with open('./work_files/b1.txt', 'w') as file1:
+                file1.write(str(dict(qount=len(package_list_diff_b1),packages=package_list_diff_b1)))
+            print('2')
             package_list_diff_b2 = [x for x in short_package_list_2 if x not in short_package_list_1]
-            # with open('./work_files/b2.txt', 'w') as file2:
-            #      file2.write(str(dict(qount=len(package_list_diff_b2),packages=package_list_diff_b2)))
-
+            with open('./work_files/b2.txt', 'w') as file2:
+                file2.write(str(dict(qount=len(package_list_diff_b2),packages=package_list_diff_b2)))
+            print('3')
             short_package_list_1_v = list(map(lambda row: dict(name=row['name'], version=row['version']),package_list_b1))
             short_package_list_2_v = list(map(lambda row: dict(name=row['name'], version=row['version']),package_list_b2))
+            print('4')
+            result_list = []
 
-            # package_list_same_b1 = [x for x in short_package_list_1_v['name'] if x in short_package_list_2_v['name']]
-            # with open('./work_files/result.txt', 'w') as file2:
-            #     file2.write(str(package_list_same_b1))
+            for i in short_package_list_1_v:
+                for j in short_package_list_2_v:
+                    if i['name'] == j['name'] and i['version'] > j['version']:
+                        result_list.append(i)
+
+            with open('./work_files/result.txt', 'w') as file2:
+                file2.write(str(result_list))
+
 
 request('p10', 'x86_64', 'p9', 'x86_64') 
 
 
-                    
+
 
