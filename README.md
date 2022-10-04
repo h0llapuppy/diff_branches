@@ -17,7 +17,7 @@
 
 ## Now enter the command in the terminal command line:
 
-> get-diff-branches <branch1> <architecture1> <branch2> <architecture2> 
+    get-diff-branches <branch1> <architecture1> <branch2> <architecture2> 
 
 (For example: get-diff-branches p10 x86_64 p9 x86_64)
 
