@@ -60,8 +60,6 @@ def request(b1: str, a1:str, b2: str, a2: str):
             with open(path_to_frite+'same_pack_v1_more_v2.txt', 'w') as file3:
                 file3.write(str(dict(request_args=dict(arch=a1),length=len(answer),packages=answer)))
 
-request('sisyphus', 'noarch', 'p10', 'noarch') 
-
 
                     
 

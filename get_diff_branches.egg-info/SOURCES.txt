@@ -1,4 +1,3 @@
-MANIFEST.in
 README.md
 setup.py
 get_diff_branches/__init__.py
