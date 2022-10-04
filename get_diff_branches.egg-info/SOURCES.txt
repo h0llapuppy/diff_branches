@@ -1,8 +1,0 @@
-README.md
-setup.py
-get_diff_branches/__init__.py
-get_diff_branches/core.py
-get_diff_branches.egg-info/PKG-INFO
-get_diff_branches.egg-info/SOURCES.txt
-get_diff_branches.egg-info/dependency_links.txt
-get_diff_branches.egg-info/top_level.txt
