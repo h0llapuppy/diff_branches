@@ -2,8 +2,8 @@
 
 ## Steps for setup library:
 
-> (sudo) apt-get 
-> (sudo) update apt-get install python3
+> (sudo) apt-get update 
+> (sudo) apt-get install python3
 
 > git clone https://github.com/h0llapuppy/diff_branches.git
 
