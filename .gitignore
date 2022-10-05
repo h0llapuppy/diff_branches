@@ -3,10 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-setup.py
-
-get_diff_branches/
-get_diff_branches.egg-info
+get_diff_branches.egg-info/
+dist/
 # C extensions
 *.so
 
