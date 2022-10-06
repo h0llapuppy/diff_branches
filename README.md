@@ -2,7 +2,7 @@
 
 ## Requirements
 
-+ python3
++ **python3**
 
 ## Steps for setup library:
 
@@ -21,19 +21,19 @@
     
 ### About Arguments
 
-- <branch1> (required) - Argument that points to the 1st branch for next calculation 
+- **branch1** (required) - Argument that points to the 1st branch for next calculation 
 
-- <branch2> (required) - Argument that points to the 2nd branch for next calculation 
+- **branch2** (required) - Argument that points to the 2nd branch for next calculation 
 
-- <architecture> (required) - Argument that points to architecture for both branches
+- **architecture** (required) - Argument that points to architecture for both branches
 
-- <calc-method> (optional) -  Argument that points to the method of calculation :
+- **calc-method** (optional) -  Argument that points to the method of calculation:
 
-    1. <b1-b2> - Print to the terminal a list of packages which exist in <branch1> but not in <branch2>
-    2. <b2-b1> - Print to the terminal a list of packages which exist in <branch2> but not in <branch1>
-    3. <b2andb1> - Print to the terminal a list of same packages for both specified branches, but only those whose version is greater for <branch1> then <branch2>
-    4. None - Message will appear in the command line: "Select path to write result files:" you must enter the path (for example: /home/user/) where 3 files will be written:
+1. **b1-b2** - Print to the terminal a list of packages which exist in **branch1** but not in **branch2**
+2. **b2-b1** - Print to the terminal a list of packages which exist in **branch2** but not in **branch1**
+3. **b2andb1** - Print to the terminal a list of same packages for both specified branches, but only those whose version is greater for **branch1** then **branch2**
+4. **None** - Message will appear in the command line: "Select path to write result files:" you must enter the path (for example: /home/user/) where 3 files will be written:
 
-    b1-b2.txt - <b1-b2>
-    b2-b1.txt - <b2-b1>
-    same_pack_v1_more_v2.txt - <b2andb1>
+    b1-b2.txt - **b1-b2**
+    b2-b1.txt - **b2-b1**
+    same_pack_v1_more_v2.txt - **b2andb1**
